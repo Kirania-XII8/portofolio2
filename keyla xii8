@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Keyla Lathifathul Ahfa Yudisa | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0b0b0b;
+      color: white;
+      scroll-behavior: smooth;
+    }
+
+    /* HEADER */
+    header {
+      position: sticky;
+      top: 0;
+      background: black;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+    }
+
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      color: crimson;
+      font-size: 24px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: crimson;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      text-align: center;
+      padding: 90px 20px;
+    }
+
+    .hero img {
+      width: 200px;
+      border-radius: 50%;
+      border: 4px solid crimson;
+      margin-bottom: 20px;
+    }
+
+    .hero h2 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 32px;
+    }
+
+    .hero h3 {
+      color: crimson;
+      margin: 10px 0 15px;
+    }
+
+    .cta {
+      margin-top: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      margin: 10px;
+      border-radius: 30px;
+      background: crimson;
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .btn.outline {
+      background: transparent;
+      border: 2px solid crimson;
+    }
+
+    /* SECTION */
+    section {
+      padding: 80px 40px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-family: 'Orbitron', sans-serif;
+      color: crimson;
+      margin-bottom: 40px;
+    }
+
+    /* ABOUT */
+    .card {
+      max-width: 850px;
+      margin: auto;
+      background: #111;
+      padding: 30px;
+      border-left: 4px solid crimson;
+    }
+
+    .red {
+      color: crimson;
+      font-weight: bold;
+    }
+
+    /* SKILLS */
+    .skill {
+      margin-bottom: 15px;
+    }
+
+    .bar {
+      background: #333;
+      height: 8px;
+      border-radius: 10px;
+    }
+
+    .fill {
+      background: crimson;
+      height: 100%;
+      border-radius: 10px;
+    }
+
+    /* EXPERIENCE */
+    .timeline {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .event {
+      position: relative;
+      padding-left: 30px;
+    }
+
+    .dot {
+      position: absolute;
+      left: 0;
+      top: 6px;
+      width: 12px;
+      height: 12px;
+      background: crimson;
+      border-radius: 50%;
+    }
+
+    /* PORTFOLIO */
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .project {
+      position: relative;
+    }
+
+    .project img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.75);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: 0.3s;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .project:hover .overlay {
+      opacity: 1;
+    }
+
+    /* CONTACT */
+    .quote {
+      margin-top: 20px;
+      color: crimson;
+      font-style: italic;
+    }
+
+    /* FOOTER */
+    footer {
+      background: black;
+      text-align: center;
+      padding: 20px;
+      color: gray;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+      }
+      nav {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Keyla</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HOME -->
+  <section id="home" class="hero">
+    <img src="images/profile.jpg" alt="Profile">
+    <h2>Keyla Lathifathul Ahfa Yudisa</h2>
+    <h3>SMAN 1 Student</h3>
+    <p>Like an anime protagonist, I keep improving my skills and chasing my goals.</p>
+    <div class="cta">
+      <a href="#portfolio" class="btn">Lihat Portofolio</a>
+      <a href="#contact" class="btn outline">Hubungi Saya</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="card">
+      <p>
+        Saya Keyla Lathifathul Ahfa Yudisa dari SMAN 1 Subang. 
+        Hobi saya dancing dan menggambar. Saya sangat menyukai anime dan nuansa Jepang.
+        Saya dapat berbicara dalam tiga bahasa: Indonesia, English, dan Japanese.
+        <br><br>
+        日本語力の向上に全力を尽くします！
+      </p>
+      <br>
+      <p><strong>Tujuan:</strong> Menjadi notaris dan mengelilingi dunia seperti Luffy.</p>
+      <br>
+      <p class="red">Saya sangat disiplin dan tidak suka orang yang terlambat.</p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skill"><span>HTML</span><div class="bar"><div class="fill" style="width:80%"></div></div></div>
+    <div class="skill"><span>CSS</span><div class="bar"><div class="fill" style="width:75%"></div></div></div>
+    <div class="skill"><span>JavaScript</span><div class="bar"><div class="fill" style="width:60%"></div></div></div>
+    <div class="skill"><span>Komunikasi</span><div class="bar"><div class="fill" style="width:85%"></div></div></div>
+    <div class="skill"><span>Kreativitas</span><div class="bar"><div class="fill" style="width:90%"></div></div></div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <h2 class="section-title">Experience</h2>
+    <div class="timeline">
+      <div class="event">
+        <span class="dot"></span>
+        <p><strong>Class 11</strong><br>Volunteer OSIS</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <h2 class="section-title">Portfolio</h2>
+    <div class="portfolio-grid">
+      <div class="project">
+        <img src="images/portfolio1.jpg">
+        <div class="overlay">Project 1</div>
+      </div>
+      <div class="project">
+        <img src="images/portfolio2.jpg">
+        <div class="overlay">Project 2</div>
+      </div>
+      <div class="project">
+        <img src="images/portfolio3.jpg">
+        <div class="overlay">Project 3</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <p>Email: <a href="mailto:laylafoxy404@gmail.com">laylafoxy404@gmail.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/laylouvv">@laylouvv</a></p>
+    <p class="quote">“Let’s start our next arc together.”</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © Keyla Lathifathul Ahfa Yudisa – 2026
+  </footer>
+
+</body>
+</html>
